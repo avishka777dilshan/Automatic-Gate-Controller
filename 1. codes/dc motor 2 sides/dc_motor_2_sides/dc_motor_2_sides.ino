@@ -132,7 +132,7 @@ else{
   // Print distance1 to Serial
   while (!(UCSR0A & (1 << UDRE0))); // Wait until buffer is empty
   UDR0 = 'D';
-  while (!(UCSR0A & (1 << UDRE0)));
+  while (!(UCSR0A & (1 << UDRE0))); // Wait until buffer is empty
   UDR0 = 'i';
   while (!(UCSR0A & (1 << UDRE0)));
   UDR0 = 's';
